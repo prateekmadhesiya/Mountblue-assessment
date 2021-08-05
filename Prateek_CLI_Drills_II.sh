@@ -11,7 +11,7 @@ tr A-Z a-z <"Harry Potter and the Goblet of Fire.txt"| tr -cs 'a-zA-Z0-9' '\n' |
 
 #Processes, ports
 pidof chrome
-pc -o ppid=process_id
+ps -o ppid=process_id
 pidof chrome | xargs kill #top press k to kill the process by their pid or by kill -9 pid
 ps aux --sort=-pcpu | head-n3
 ps aux --sort=-%mem | head -n3
